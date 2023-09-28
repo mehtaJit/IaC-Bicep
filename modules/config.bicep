@@ -9,10 +9,17 @@ var environmentConfig = {
         tier: 'Standard'
       }
       properties: {
-        enableExpress: false
+        lockDuration: 'PT5M'
+        maxSizeInMegabytes: 1024
+        requiresDuplicateDetection: false
+        requiresSession: false
+        defaultMessageTimeToLive: 'P10675199DT2H48M5.4775807S'
+        deadLetteringOnMessageExpiration: false
+        duplicateDetectionHistoryTimeWindow: 'PT10M'
+        maxDeliveryCount: 10
+        autoDeleteOnIdle: 'P10675199DT2H48M5.4775807S'
         enablePartitioning: false
-        status: 'Active'
-        maxMessageSizeInKilobytes: 256
+        enableExpress: false
       }
     }
     keyVault: {
@@ -30,10 +37,17 @@ var environmentConfig = {
         tier: 'Standard'
       }
       properties: {
-        enableExpress: false
+        lockDuration: 'PT5M'
+        maxSizeInMegabytes: 1024
+        requiresDuplicateDetection: false
+        requiresSession: false
+        defaultMessageTimeToLive: 'P10675199DT2H48M5.4775807S'
+        deadLetteringOnMessageExpiration: false
+        duplicateDetectionHistoryTimeWindow: 'PT10M'
+        maxDeliveryCount: 10
+        autoDeleteOnIdle: 'P10675199DT2H48M5.4775807S'
         enablePartitioning: false
-        status: 'Active'
-        maxMessageSizeInKilobytes: 256
+        enableExpress: false
       }
     }
     keyVault: {
@@ -52,10 +66,17 @@ var environmentConfig = {
         tier: 'Standard'
       }
       properties: {
-        enableExpress: false
+        lockDuration: 'PT5M'
+        maxSizeInMegabytes: 1024
+        requiresDuplicateDetection: false
+        requiresSession: false
+        defaultMessageTimeToLive: 'P10675199DT2H48M5.4775807S'
+        deadLetteringOnMessageExpiration: false
+        duplicateDetectionHistoryTimeWindow: 'PT10M'
+        maxDeliveryCount: 10
+        autoDeleteOnIdle: 'P10675199DT2H48M5.4775807S'
         enablePartitioning: false
-        status: 'Active'
-        maxMessageSizeInKilobytes: 256
+        enableExpress: false
       }
     }
     keyVault: {
@@ -74,10 +95,17 @@ var environmentConfig = {
         tier: 'Standard'
       }
       properties: {
-        enableExpress: false
+        lockDuration: 'PT5M'
+        maxSizeInMegabytes: 1024
+        requiresDuplicateDetection: false
+        requiresSession: false
+        defaultMessageTimeToLive: 'P10675199DT2H48M5.4775807S'
+        deadLetteringOnMessageExpiration: false
+        duplicateDetectionHistoryTimeWindow: 'PT10M'
+        maxDeliveryCount: 10
+        autoDeleteOnIdle: 'P10675199DT2H48M5.4775807S'
         enablePartitioning: false
-        status: 'Active'
-        maxMessageSizeInKilobytes: 256
+        enableExpress: false
       }
     }
     keyVault: {
