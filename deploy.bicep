@@ -34,3 +34,29 @@ var queueName = 'email'
     }
   }
 
+// Logic app
+  module LogicAppImplementation 'utility/sample-logic-app.bicep'={
+    name:'Fetch Logic App Implementation'
+    dependsOn:[]
+    params:{
+      frequency:'Hour'
+      interval:'1'
+      type:'recurrence'
+    }
+  }
+
+  module LogicApp 'modules/logic-app.bicep'={
+    name:'Deploying Logic App'
+    dependsOn:[
+      LogicAppImplementation
+      ServiceBus
+    ]
+    params:{
+      logicAppName:logicAppName
+      trigger:LogicAppImplementation.outputs.trigger
+      actions:LogicAppImplementation.outputs.actions
+      location:location
+    }
+  }
+
+

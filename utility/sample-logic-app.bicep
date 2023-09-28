@@ -1,6 +1,6 @@
-var frequency = 'Hour'
-var interval = '1'
-var type = 'recurrence'
+param frequency string
+param interval string
+param type string
 
 var actionType = 'http'
 var method = 'GET'
