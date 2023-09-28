@@ -12,12 +12,25 @@ var logicAppName = '${baseNamePrefix}-http-logic'
 var serviceBusName = '${baseNamePrefix}-msgbrkr-sbus'
 var queueName = 'email'
 
-module Config 'modules/config.bicep'={
-  name:'Fetch-Configuration'
-  dependsOn:[]
-  params:{
-    environmentIdentifier: environment
+// Configuration
+  module Config 'modules/config.bicep'={
+    name:'Fetch Configuration'
+    dependsOn:[]
+    params:{
+      environmentIdentifier: environment
+    }
   }
-}
 
-var config = Config.outputs.config
+  var config = Config.outputs.config
+
+// Service Bus
+  module ServiceBus 'modules/service-bus.bicep'={
+    name:'Deploying Service Bus'
+    dependsOn:[]
+    params:{
+      serviceBusNamespaceName:serviceBusName 
+      serviceBusQueueName: queueName
+      location: location
+    }
+  }
+
